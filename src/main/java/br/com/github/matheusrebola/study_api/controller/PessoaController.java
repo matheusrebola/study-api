@@ -29,8 +29,8 @@ public class PessoaController {
 	}
 	@PutMapping
 	public Pessoa update(Pessoa pessoa){
-		
-		return null;
+		Pessoa result = pessoaService.save(pessoa);
+		return result;
 	}
 	@DeleteMapping
 	public void delete(Long id){
