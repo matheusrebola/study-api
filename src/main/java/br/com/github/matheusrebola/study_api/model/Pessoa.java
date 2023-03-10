@@ -2,8 +2,10 @@ package br.com.github.matheusrebola.study_api.model;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "pessoas")
 public class Pessoa {
 	@Id
 	private Long id;
